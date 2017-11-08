@@ -1,0 +1,11 @@
+imports:
+    - 'parameters.dev.yml'
+    - 'routing.yml'
+    - 'security.yml'
+    - 'services.yml'
+
+parameters: []
+
+framework:
+    services:
+        autoload: false

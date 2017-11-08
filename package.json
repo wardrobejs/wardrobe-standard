@@ -1,0 +1,11 @@
+{
+  "name": "wardrobe-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Yme-Jan Iedema <yme-jan@iedema.me>",
+  "license": "MIT",
+  "dependencies": {
+    "wardrobe": "1.0.2"
+  }
+}

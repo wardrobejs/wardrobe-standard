@@ -1,0 +1,4 @@
+services:
+    app.controller.default:
+        class: !require '../../src/AppBundle/Controller/DefaultController'
+        tags: ['container_aware', 'swig']
