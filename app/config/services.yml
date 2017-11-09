@@ -2,3 +2,7 @@ services:
     app.controller.default:
         class: !require '../../src/AppBundle/Controller/DefaultController'
         tags: ['container_aware', 'swig']
+
+    swig.extension.simple:
+        class: !require '../../src/AppBundle/Swig/AppExtension'
+        tags: ['swig.extension']
