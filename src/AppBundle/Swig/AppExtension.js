@@ -2,6 +2,12 @@ const SwigExtension = require('wardrobe').Swig.Extension;
 
 class AppExtension extends SwigExtension
 {
+    constructor (asset_manager)
+    {
+        super();
+        this._asset_manager = asset_manager;
+    }
+
     getFilters ()
     {
         return {
@@ -19,10 +25,10 @@ class AppExtension extends SwigExtension
     getFunctions ()
     {
         return {
-            'test': () => {
-                return 'test';
+            'asset': (url) => {
+                return this._asset_manager.resolve(url).getBase64();
             }
-        };
+        }
     }
 
     priceFilter (number, decimals = 0, decPoint = '.', thousandsSep = ',')

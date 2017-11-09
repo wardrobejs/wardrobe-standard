@@ -19,6 +19,7 @@
             <div id="next">
                 <h2>What's next?</h2>
                 <p>
+                    <img id="icon-logo" src="{{ asset('@App://public/images/wardrobe.png') }}">
                     Read the documentation to learn
                     <a href="">
                         How to create your first page in Wardrobe
@@ -48,12 +49,12 @@
         #container { padding: 2em; }
         #welcome, #status { margin-bottom: 2em; }
         #welcome h1 span { display: block; font-size: 75%; }
-        #icon-status { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
-
+        #icon-status, #icon-logo { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
+        #icon-logo { display: none; }
         @media (min-width: 768px) {
             #wrapper { width: 80%; margin: 2em auto; }
+            #icon-logo { display: inline-block; }
             #status a, #next a { display: block; }
-
             @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
             @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
         }

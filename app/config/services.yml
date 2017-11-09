@@ -6,3 +6,5 @@ services:
     swig.extension.simple:
         class: !require '../../src/AppBundle/Swig/AppExtension'
         tags: ['swig.extension']
+        arguments:
+            - '@asset_manager'
