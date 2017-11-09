@@ -5,7 +5,8 @@ class AppKernel extends Kernel
     registerBundles ()
     {
         return [
-            require('../src/AppBundle/App')
+            require('wardrobe').SwigBundle,
+            require('../src/AppBundle/AppBundle')
         ];
     }
 

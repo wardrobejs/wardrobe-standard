@@ -2,11 +2,6 @@ const SwigExtension = require('wardrobe').Swig.Extension;
 
 class AppExtension extends SwigExtension
 {
-    constructor (asset_manager)
-    {
-        super();
-        this._asset_manager = asset_manager;
-    }
 
     getFilters ()
     {
@@ -25,9 +20,7 @@ class AppExtension extends SwigExtension
     getFunctions ()
     {
         return {
-            'asset': (url) => {
-                return this._asset_manager.resolve(url).getBase64();
-            }
+
         }
     }
 

@@ -4,15 +4,15 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
+     * @Swig()
      * @param request
      */
     indexAction (request)
     {
-        return this.render('@App://views/default/index.html.twig', {
+        return {
             base_dir: fs.realpathSync(this.getContainer().getParameter('project_dir'))
-        });
+        };
     }
-
 }
 
 module.exports = DefaultController;
