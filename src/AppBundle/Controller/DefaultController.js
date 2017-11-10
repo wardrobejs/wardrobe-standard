@@ -1,5 +1,8 @@
 const Controller = require('wardrobe').Controller;
 
+/**
+ * @Route(hostname="*")
+ */
 class DefaultController extends Controller
 {
     /**
@@ -7,10 +10,10 @@ class DefaultController extends Controller
      * @Swig()
      * @param request
      */
-    indexAction (request)
+    async indexAction (request)
     {
         return {
-            base_dir: fs.realpathSync(this.getContainer().getParameter('project_dir'))
+            base_dir: this.getContainer().getParameter('project_dir')
         };
     }
 }
