@@ -6,6 +6,6 @@
   "author": "Yme-Jan Iedema <yme-jan@iedema.me>",
   "license": "MIT",
   "dependencies": {
-    "wardrobe": "^1.0.13"
+    "wardrobe": "^1.0.15"
   }
 }
