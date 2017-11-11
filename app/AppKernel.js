@@ -1,12 +1,12 @@
-const Kernel = require('wardrobe').Kernel;
+const Kernel = require('@wardrobe/wardrobe').Kernel;
 
 class AppKernel extends Kernel
 {
     registerBundles ()
     {
         return [
-            require('wardrobe').SwigBundle,
-            require('wardrobe').AssetBundle,
+            require('@wardrobe/swigbundle'),
+            require('@wardrobe/databasebundle'),
             require('../src/AppBundle/AppBundle'),
         ];
     }
