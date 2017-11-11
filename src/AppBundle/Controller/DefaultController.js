@@ -1,5 +1,4 @@
 const Controller = require('@wardrobe/wardrobe').Controller;
-const User = require('../Entity/User');
 
 /**
  * @Route(hostname="*")
