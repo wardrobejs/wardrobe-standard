@@ -5,10 +5,14 @@
   "main": "index.js",
   "author": "Yme-Jan Iedema <yme-jan@iedema.me>",
   "license": "MIT",
-  "repository": "https://github.com/aviinl/wardrobe-standard.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wardrobejs/wardrobe-standard.git"
+  },
   "dependencies": {
     "@wardrobe/wardrobe": "2.x",
     "@wardrobe/swigbundle": "1.x",
-    "@wardrobe/databasebundle": "1.x"
+    "@wardrobe/databasebundle": "1.x",
+    "@wardrobe/filesystemdatabasedriverbundle": "file:../wardrobe/FilesystemDatabaseDriverBundle"
   }
 }
