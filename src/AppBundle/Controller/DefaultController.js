@@ -7,14 +7,13 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
-     * @Swig()
      * @param request
      */
     async indexAction (request)
     {
-        return {
+        return this.render('@AppBundle://default/index.html.twig', {
             base_dir: this.getContainer().getParameter('project_dir')
-        };
+        });
     }
 }
 
