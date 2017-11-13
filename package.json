@@ -13,6 +13,6 @@
     "@wardrobe/wardrobe": "2.x",
     "@wardrobe/swigbundle": "1.x",
     "@wardrobe/databasebundle": "1.x",
-    "@wardrobe/filesystemdatabasedriverbundle": "file:../wardrobe/FilesystemDatabaseDriverBundle"
+    "@wardrobe/filesystemdatabasedriverbundle": "1.x"
   }
 }
