@@ -1,8 +1,5 @@
 const Controller = require('@wardrobe/wardrobe').Controller;
 
-/**
- * @Route(hostname="*")
- */
 class DefaultController extends Controller
 {
     /**
