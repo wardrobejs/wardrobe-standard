@@ -1,4 +1,4 @@
-const SwigTokenParser = require('wardrobe').Swig.TokenParser;
+const SwigTokenParser = require('@wardrobe/swigbundle').TokenParser;
 
 class TestTokenParser extends SwigTokenParser
 {

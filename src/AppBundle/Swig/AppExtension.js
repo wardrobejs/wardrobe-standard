@@ -1,6 +1,6 @@
-const SwigExtension = require('wardrobe').Swig.Extension;
+const Extension = require('@wardrobe/swigbundle').Extension;
 
-class AppExtension extends SwigExtension
+class AppExtension extends Extension
 {
 
     getFilters ()
@@ -19,9 +19,7 @@ class AppExtension extends SwigExtension
 
     getFunctions ()
     {
-        return {
-
-        }
+        return {};
     }
 
     priceFilter (number, decimals = 0, decPoint = '.', thousandsSep = ',')
