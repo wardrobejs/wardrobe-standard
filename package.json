@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@wardrobe/wardrobe": "2.x",
-    "@wardrobe/swigbundle": "1.x",
+    "@wardrobe/swigbundle": "1.x"
   },
   "optionalDependencies": {
     "@wardrobe/databasebundle": "1.x",
